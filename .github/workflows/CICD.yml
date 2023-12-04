@@ -63,6 +63,6 @@ jobs:
           git push
 
       - name: Publish
-        if: github.ref == 'refs/heads/main' && steps.release.outputs.new_version
+        if: github.ref == 'refs/heads/main' && steps.release.outputs.version
         run: npm publish
 
