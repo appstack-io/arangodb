@@ -1,1 +1,1 @@
-# nestjs-arangodb
+# @appnessio/nestjs-arangodb
