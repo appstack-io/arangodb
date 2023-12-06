@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.5.0 - 2023-12-06
+#### Features
+- rename to appstack-io - (d3a8130) - orgal
+#### Miscellaneous Chores
+- bump version to 0.4.0 - (3a37115) - GitHub Action
+- - -
+
 ## 0.4.0 - 2023-12-04
 #### Features
 - init - (1ad5007) - orgal
