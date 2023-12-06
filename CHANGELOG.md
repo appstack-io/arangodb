@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.6.1 - 2023-12-06
+#### Bug Fixes
+- removed dep microservices - (3358bba) - orgal
+#### Miscellaneous Chores
+- bump version to 0.6.0 - (c9bcea3) - GitHub Action
+- - -
+
 ## 0.6.0 - 2023-12-06
 #### Features
 - rename to appstack-io - (99e5f38) - orgal
