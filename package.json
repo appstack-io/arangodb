@@ -24,8 +24,7 @@
   },
   "dependencies": {
     "arangojs": "^8.1.0",
-    "@nestjs/common": "^10.0.0",
-    "@nestjs/microservices": "^10.0.5"
+    "@nestjs/common": "^10.0.0"
   },
   "devDependencies": {
     "@babel/generator": "^7.23.0",
