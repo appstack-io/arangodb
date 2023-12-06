@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.6.2 - 2023-12-06
+#### Bug Fixes
+- removed dep microservices - (b392ce3) - orgal
+#### Miscellaneous Chores
+- bump version to 0.6.1 - (ba51397) - GitHub Action
+- - -
+
 ## 0.6.1 - 2023-12-06
 #### Bug Fixes
 - removed dep microservices - (3358bba) - orgal
