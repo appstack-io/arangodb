@@ -2,13 +2,13 @@
   "name": "@appstack-io/arangodb",
   "version": "0.6.4",
   "description": "",
-  "author": "",
-  "private": false,
-  "license": "UNLICENSED",
-  "repository": "https://github.com/appstack-io/arangodb",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+  "author": {
+    "name": "Or Gal",
+    "email": "orrgal@gmail.com"
   },
+  "private": false,
+  "license": "GPL-3.0",
+  "repository": "https://github.com/appstack-io/arangodb",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
