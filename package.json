@@ -5,7 +5,7 @@
   "author": "",
   "private": false,
   "license": "UNLICENSED",
-  "repository": "https://github.com/the-adventure-club/service1",
+  "repository": "https://github.com/appstack-io/arangodb",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
