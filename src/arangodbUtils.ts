@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { Database } from 'arangojs';
 
 @Injectable()
 export class ArangodbUtils {
@@ -18,7 +19,24 @@ export class ArangodbUtils {
     return { ...item, createdAt: Date.now(), updatedAt: Date.now() };
   }
 
+  async createAppDb() {
+    try {
+      const db = new Database({
+        url: process.env.ARANGO_URL,
+        databaseName: '_system',
+        auth: {
+          username: process.env.ARANGO_USERNAME,
+          password: process.env.ARANGO_PASSWORD,
+        },
+      });
+      await db.createDatabase(process.env.ARANGO_DBNAME);
+    } catch (e) {
+      if (e.message.indexOf('duplicate database name') < 0) throw e;
+    }
+  }
+
   async tryDdl(...createFns: (() => Promise<any>)[]) {
+    await this.createAppDb();
     for (const createFn of createFns) {
       try {
         await createFn();
@@ -32,6 +50,7 @@ export class ArangodbUtils {
     createFn: () => Promise<T>,
     findUniqueFn: () => Promise<T>,
   ) {
+    await this.createAppDb();
     try {
       return await createFn();
     } catch (e) {

@@ -20,21 +20,4 @@ export class ArangodbService {
       },
     });
   }
-
-  async initDb() {
-    try {
-      const db = new Database({
-        url: process.env.ARANGO_URL,
-        auth: {
-          username: process.env.ARANGO_USERNAME,
-          password: process.env.ARANGO_PASSWORD,
-        },
-      });
-      await db.createDatabase(process.env.ARANGO_DBNAME);
-    } catch (e) {
-      if (e.message.indexOf('duplicate database name') < 0) throw e;
-    } finally {
-      this.setDb();
-    }
-  }
 }
