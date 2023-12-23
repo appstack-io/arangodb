@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.6.6 - 2023-12-23
+#### Bug Fixes
+- lazy initdb - (47a7f73) - orgal
+#### Miscellaneous Chores
+- bump version to 0.6.5 - (0f05780) - GitHub Action
+- - -
+
 ## 0.6.5 - 2023-12-07
 #### Bug Fixes
 - npm - (6c19c62) - orgal
